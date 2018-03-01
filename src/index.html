@@ -1,16 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Angular 1.x Starter Project | LeanStacks</title>
-    <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700i|Open+Sans:400,400i,600,600i,700,700i" rel="stylesheet">
+<html lang="en" ng-app="myAngularApp">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Angular 1.x Starter Project | LeanStacks</title>
+  <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:500,700|Open+Sans:400,400i,600,600i,700,700i" rel="stylesheet">
 </head>
-  <body>
 
-    <p>Hello Angular.js!</p>
+<body ng-controller="ApplicationController">
 
-  </body>
+  <h1>Let's Get Started</h1>
+
+  <p>Hello {{'Angular.js' + '!'}}</p>
+
+  <p>{{currentDate | date:'short'}}</p>
+
+</body>
+
 </html>
