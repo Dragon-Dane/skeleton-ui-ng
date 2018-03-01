@@ -6,6 +6,7 @@ require('angular-sanitize');
 
 require('./footer/footer.module');
 
+require('bootstrap/dist/css/bootstrap.css');
 require('./styles/styles.scss');
 
 const myAngularApp = angular.module('myAngularApp', ['ngRoute', 'ngAnimate', 'ngResource', 'ngSanitize', 'myAngularApp.footer']);

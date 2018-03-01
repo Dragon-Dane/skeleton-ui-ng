@@ -1,8 +1,23 @@
-<div>
-  <p>{{$ctrl.projectName}}</p>
-
-  <p>{{$ctrl.createdBy}}</p>
-
-  <p>{{$ctrl.currentDate | date:'short'}}</p>
-
-</div>
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <ul class="list-unstyled">
+          <li>{{$ctrl.projectName}}</li>
+          <li>{{$ctrl.createdBy}}</li>
+        </ul>
+      </div>
+      <div class="col">
+        <ul class="list-unstyled">
+          <li>{{$ctrl.currentDate | date:'short'}}</li>
+        </ul>
+      </div>
+      <div class="col">
+        <ul class="list-unstyled">
+          <li>Terms of Use</li>
+          <li>Privacy Policy</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
