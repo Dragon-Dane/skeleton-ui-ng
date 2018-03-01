@@ -44,6 +44,9 @@ module.exports = {
     },{
       test: /\.(png|jpe?g|gif|ico|svg|ttf|eot)$/,
       loader: 'file-loader?name=assets/[name].[hash].[ext]'
+    },{
+      test: /\.html$/,
+      loader: 'raw-loader'
     }]
   },
   plugins: [

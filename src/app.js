@@ -4,29 +4,14 @@ require('angular-animate');
 require('angular-resource');
 require('angular-sanitize');
 
+require('./footer/footer.module');
+
 require('./styles/styles.scss');
 
-const myAngularApp = angular.module('myAngularApp', ['ngRoute', 'ngAnimate', 'ngResource', 'ngSanitize']);
+const myAngularApp = angular.module('myAngularApp', ['ngRoute', 'ngAnimate', 'ngResource', 'ngSanitize', 'myAngularApp.footer']);
 
-myAngularApp.controller('ApplicationController', [
-  '$rootScope',
-  '$scope',
-  '$interval',
-  ($rootScope, $scope, $interval) => {
+myAngularApp.controller('ApplicationController', [() => {
     console.log('> ApplicationController');
-
-    $scope.currentDate = new Date();
-    const currentDateInterval = $interval(() => {
-      $scope.currentDate = new Date();
-    }, 5000);
-
-    $scope.$on('$destroy', () => {
-      console.log(' destroying ApplicationController scope');
-      if (currentDateInterval) {
-        console.log('  cancelling currentDateInterval');
-        $interval.cancel(currentDateInterval);
-      }
-    });
 
     console.log('< ApplicationController');
   }
