@@ -5,25 +5,25 @@
     <div class="row">
       <div class="col">
         <h3>Application Stack</h3>
-        <ul>
-          <li ng-repeat="stack in $ctrl.applicationStack">
-            {{stack.name}}
+        <ul class="list-unstyled">
+          <li ng-repeat="technology in $ctrl.applicationStack">
+            {{technology.name}}
           </li>
         </ul>
       </div>
       <div class="col">
         <h3>Test Stack</h3>
-        <ul>
-          <li ng-repeat="stack in $ctrl.testStack">
-            {{stack.name}}
+        <ul class="list-unstyled">
+          <li ng-repeat="technology in $ctrl.testStack">
+            {{technology.name}}
           </li>
         </ul>
       </div>
       <div class="col">
         <h3>Build Stack</h3>
-        <ul>
-          <li ng-repeat="stack in $ctrl.buildStack">
-            {{stack.name}}
+        <ul class="list-unstyled">
+          <li ng-repeat="technology in $ctrl.buildStack">
+            {{technology.name}}
           </li>
         </ul>
       </div>

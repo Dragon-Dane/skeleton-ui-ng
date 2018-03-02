@@ -4,6 +4,7 @@ require('angular-animate');
 require('angular-resource');
 require('angular-sanitize');
 
+require('./core/core.module');
 require('./footer/footer.module');
 require('./header/header.module');
 require('./landing/landing.module');
@@ -14,6 +15,7 @@ angular.module('myAngularApp', [
   'ngAnimate',
   'ngResource',
   'ngSanitize',
+  'myAngularApp.core',
   'myAngularApp.footer',
   'myAngularApp.header',
   'myAngularApp.landing',
