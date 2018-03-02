@@ -9,7 +9,7 @@ h1, h2, .h1, .h2 {
 }
 
 .page {
-  min-height: 80vh;
+  min-height: 75vh;
 }
 
 .text-blue {
@@ -18,4 +18,12 @@ h1, h2, .h1, .h2 {
 
 .text-dark-grey {
   color: $dark-grey;
+}
+
+.text-red {
+  color: $red;
+}
+
+.text-dark-red {
+  color: $dark-red;
 }
