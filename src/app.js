@@ -6,6 +6,7 @@ require('angular-sanitize');
 
 require('./footer/footer.module');
 require('./header/header.module');
+require('./landing/landing.module');
 
 require('bootstrap/dist/css/bootstrap.css');
 require('./styles/styles.scss');
@@ -16,7 +17,8 @@ const myAngularApp = angular.module('myAngularApp', [
   'ngResource',
   'ngSanitize',
   'myAngularApp.footer',
-  'myAngularApp.header'
+  'myAngularApp.header',
+  'myAngularApp.landing'
 ]);
 
 myAngularApp.controller('ApplicationController', [() => {
