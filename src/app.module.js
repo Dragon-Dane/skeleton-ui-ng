@@ -7,6 +7,7 @@ require('angular-sanitize');
 require('./footer/footer.module');
 require('./header/header.module');
 require('./landing/landing.module');
+require('./stack/stack.module');
 
 angular.module('myAngularApp', [
   'ngRoute',
@@ -15,5 +16,6 @@ angular.module('myAngularApp', [
   'ngSanitize',
   'myAngularApp.footer',
   'myAngularApp.header',
-  'myAngularApp.landing'
+  'myAngularApp.landing',
+  'myAngularApp.stack'
 ]);
