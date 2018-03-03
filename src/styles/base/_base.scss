@@ -8,6 +8,14 @@ h1, h2, .h1, .h2 {
   font-family: $font-secondary;
 }
 
+a {
+  color: $red;
+
+  &:hover {
+    color: $red;
+  }
+}
+
 .page {
   min-height: 75vh;
 }

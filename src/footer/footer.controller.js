@@ -2,7 +2,6 @@ export default class FooterController {
   constructor($interval) {
     this.$interval = $interval;
     this.projectName = 'Angular 1.x Starter Project';
-    this.createdBy = 'LeanStacks';
 
     this.currentDate = new Date();
     this.currentDateInterval = $interval(() => {
