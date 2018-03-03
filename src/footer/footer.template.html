@@ -9,7 +9,13 @@
       </div>
       <div class="col text-center d-none d-sm-block">
         <ul class="list-unstyled">
-          <li>{{$ctrl.currentDate | date:'short'}}</li>
+          <li>
+            <span class="fa-layers fa-fw">
+              <i class="fas fa-calendar"></i>
+              <span class="fa-layers-text fa-inverse" data-fa-transform="shrink-8 down-3" style="color: #000;font-weight:900;">{{$ctrl.currentDate | date:'d'}}</span>
+            </span>
+            {{$ctrl.currentDate | date:'short'}}
+          </li>
         </ul>
       </div>
       <div class="col text-right">
