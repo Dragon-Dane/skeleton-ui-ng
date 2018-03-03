@@ -8,6 +8,7 @@ require('./core/core.module');
 require('./footer/footer.module');
 require('./header/header.module');
 require('./landing/landing.module');
+require('./technology/technology.module');
 require('./stack/stack.module');
 
 angular.module('myAngularApp', [
@@ -19,5 +20,6 @@ angular.module('myAngularApp', [
   'myAngularApp.footer',
   'myAngularApp.header',
   'myAngularApp.landing',
+  'myAngularApp.technology',
   'myAngularApp.stack'
 ]);

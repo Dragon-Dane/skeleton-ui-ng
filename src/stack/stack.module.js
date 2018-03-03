@@ -1,7 +1,7 @@
 import StackListController from './stack-list.controller';
 import StackDetailController from './stack-detail.controller';
 
-const stackModule = angular.module('myAngularApp.stack', ['myAngularApp.core.technology']);
+const stackModule = angular.module('myAngularApp.stack', ['myAngularApp.core.technology', 'myAngularApp.technology']);
 
 // Configure Module Components
 stackModule.component('stackList', {

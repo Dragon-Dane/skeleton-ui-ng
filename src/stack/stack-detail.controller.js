@@ -19,8 +19,11 @@ export default class StackDetailController {
   }
 
   showTechnologyDetail(technologyId) {
-    console.log(`technologyId: ${technologyId}`);
-    this.technology = this.stack.find((technology) => technology.id === technologyId);
+    this.selectedTechnology = this.stack.find((technology) => technology.id === technologyId);
+  }
+
+  hideTechnologyDetail() {
+    this.selectedTechnology = null;
   }
 
 }

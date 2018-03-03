@@ -1,0 +1,14 @@
+<div class="row">
+  <div class="col">
+    <h4>{{$ctrl.technology.name}}</h4>
+    <div>
+      <strong>Version:</strong>&nbsp;{{$ctrl.technology.version}}
+    </div>
+    <div class="lead mt-3">
+      {{$ctrl.technology.description}}
+    </div>
+    <div class="mt-3">
+      <button class="btn btn-outline-danger" ng-click="$ctrl.onClose()">Close</button>
+    </div>
+  </div>
+</div>

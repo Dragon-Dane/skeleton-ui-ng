@@ -20,6 +20,16 @@
           <a href="/stacks">Back</a>
         </div>
       </div>
+      <div class="col-sm-6 col-xs-12">
+        <div ng-if="$ctrl.selectedTechnology">
+          <div class="d-none d-sm-block pl-2 pt-3 pb-3 border-left border-dark">
+            <technology-detail technology="$ctrl.selectedTechnology" on-close="$ctrl.hideTechnologyDetail()"></technology-detail>
+          </div>
+          <div class="d-sm-none mt-2 pt-2 border-top border-dark">
+            <technology-detail technology="$ctrl.selectedTechnology" on-close="$ctrl.hideTechnologyDetail()"></technology-detail>
+          </div>
+        </div>
+      </div>
     </div>
 
   </div>
