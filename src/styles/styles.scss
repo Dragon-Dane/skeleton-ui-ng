@@ -1,4 +1,5 @@
-@import './base/settings';
+@import './base/settings'; // SCSS variables and Bootstrap overrides
+@import '~bootstrap/scss/bootstrap';
 @import './base/base';
 @import './components/footer';
 @import './components/header';

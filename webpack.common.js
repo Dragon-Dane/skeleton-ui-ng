@@ -23,13 +23,18 @@ module.exports = {
       loader: 'babel-loader',
       exclude: /node_modules/
     },{
-      test: /\.s?css$/,
+      test: /\.scss$/,
       use: ExtractCSS.extract({
         use: [{
           loader: 'css-loader'
         },{
           loader: 'sass-loader'
         }]
+      })
+    },{
+      test: /\.css$/,
+      use: ExtractCSS.extract({
+        use: ['style-loader', 'css-loader']
       })
     },{
       test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
