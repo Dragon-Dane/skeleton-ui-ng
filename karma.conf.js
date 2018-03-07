@@ -1,31 +1,35 @@
-//jshint strict: false
+const webpack = require('./webpack.dev.js');
+
 module.exports = function(config) {
   config.set({
 
-    basePath: './src',
-
-    files: [
-      '../node_modules/angular/angular.js',
-      '../node_modules/angular-animate/angular-animate.js',
-      '../node_modules/angular-resource/angular-resource.js',
-      '../node_modules/angular-route/angular-route.js',
-      '../node_modules/angular-mocks/angular-mocks.js',
-      '**/*.module.js',
-      '*!(.module|.spec).js',
-      '!(../node_modules)/**/*!(.module|.spec).js',
-      '**/*.spec.js'
-    ],
-
-    autoWatch: true,
-
+    basePath: '',
     frameworks: ['jasmine'],
 
-    browsers: ['Chrome'],
+    files: [
+      './src/index.specs.js'
+    ],
 
-    plugins: [
-      'karma-chrome-launcher',
-      'karma-jasmine'
-    ]
+    preprocessors: {
+      './src/index.specs.js': ['webpack'],
+      './src/**/*.spec.js': ['webpack']
+    },
+
+    webpack,
+
+    webpackMiddleware: {
+      noInfo: true,
+      stats: 'errors-only'
+    },
+
+    reporters: ['progress'],
+    port: 9876,
+    colors: true,
+    logLevel: config.LOG_INFO,
+    autoWatch: true,
+    browsers: ['ChromeHeadless'],
+    singleRun: false,
+    concurrency: Infinity
 
   });
 };

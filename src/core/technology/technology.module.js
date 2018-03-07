@@ -11,4 +11,4 @@ coreTechnologyModule.factory('Technology', ['$resource', ($resource) => {
   });
 }]);
 
-export default coreTechnologyModule;
+export default coreTechnologyModule.name;

@@ -12,4 +12,4 @@ technologyModule.component('technologyDetail', {
   }
 })
 
-export default technologyModule;
+export default technologyModule.name;

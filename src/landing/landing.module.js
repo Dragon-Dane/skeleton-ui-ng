@@ -18,4 +18,4 @@ landingModule.config([
   }
 ]);
 
-export default landingModule;
+export default landingModule.name;

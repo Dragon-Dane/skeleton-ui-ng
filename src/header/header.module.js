@@ -9,4 +9,4 @@ headerModule.component('appHeader', {
   controller: HeaderController
 });
 
-export default headerModule;
+export default headerModule.name;

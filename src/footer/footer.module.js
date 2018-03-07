@@ -9,4 +9,4 @@ footerModule.component('appFooter', {
   controller: FooterController
 });
 
-export default footerModule;
+export default footerModule.name;
