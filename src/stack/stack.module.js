@@ -20,4 +20,4 @@ stackModule.config([
   }
 ]);
 
-export default stackModule;
+export default stackModule.name;
