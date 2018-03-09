@@ -1,0 +1,29 @@
+<footer class="bg-dark text-light mt-5 py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col text-left">
+        <ul class="list-unstyled">
+          <li>{{$ctrl.projectName}}</li>
+          <li>A <span class="text-blue">LEAN</span><strong>STACKS</strong> Solution</li>
+        </ul>
+      </div>
+      <div class="col text-center d-none d-sm-block">
+        <ul class="list-unstyled">
+          <li>
+            <span class="fa-layers fa-fw">
+              <i class="fas fa-calendar"></i>
+              <span class="fa-layers-text fa-inverse" data-fa-transform="shrink-8 down-3" style="color: #000;font-weight:900;">{{$ctrl.currentDate | date:'d'}}</span>
+            </span>
+            {{$ctrl.currentDate | date:'short'}}
+          </li>
+        </ul>
+      </div>
+      <div class="col text-right">
+        <ul class="list-unstyled">
+          <li>Terms of Use</li>
+          <li>Privacy Policy</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>

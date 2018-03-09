@@ -1,0 +1,36 @@
+<div class="page">
+  <div class="container">
+    <h2 class="display-4 text-capitalize">{{$ctrl.stackName}} Stack</h2>
+
+    <div class="row">
+      <div class="col">
+        <div class="lead">Select any technology to view additional detail.</div>
+      </div>
+    </div>
+
+    <div class="row mt-3">
+      <div class="col-sm-6 col-xs-12">
+        <h3>Technologies</h3>
+        <ul class="list-unstyled">
+          <li ng-repeat="technology in $ctrl.stack">
+            <a href="#" ng-click="$ctrl.showTechnologyDetail(technology.id)">{{technology.name}}</a>
+          </li>
+        </ul>
+        <div class="mt-4">
+          <a href="/stacks"><i class="fas fa-caret-left"></i>&nbsp;Back</a>
+        </div>
+      </div>
+      <div class="col-sm-6 col-xs-12">
+        <div ng-if="$ctrl.selectedTechnology">
+          <div class="d-none d-sm-block pl-2 pt-3 pb-3 border-left border-dark">
+            <technology-detail technology="$ctrl.selectedTechnology" on-close="$ctrl.hideTechnologyDetail()"></technology-detail>
+          </div>
+          <div class="d-sm-none mt-2 pt-2 border-top border-dark">
+            <technology-detail technology="$ctrl.selectedTechnology" on-close="$ctrl.hideTechnologyDetail()"></technology-detail>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

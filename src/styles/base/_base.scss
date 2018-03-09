@@ -1,0 +1,37 @@
+body {
+  background: $off-white;
+  color: $black;
+  font-family: $font-primary;
+}
+
+h1, h2, .h1, .h2 {
+  font-family: $font-secondary;
+}
+
+a {
+  color: $red;
+
+  &:hover {
+    color: $red;
+  }
+}
+
+.page {
+  min-height: 75vh;
+}
+
+.text-blue {
+  color: $blue;
+}
+
+.text-dark-grey {
+  color: $dark-grey;
+}
+
+.text-red {
+  color: $red;
+}
+
+.text-dark-red {
+  color: $dark-red;
+}

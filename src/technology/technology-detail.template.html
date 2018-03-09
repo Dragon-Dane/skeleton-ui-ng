@@ -1,0 +1,20 @@
+<div class="row">
+  <div class="col">
+    <h4>{{$ctrl.technology.name}}</h4>
+    <div ng-if="$ctrl.technology.version">
+      <strong>Version:</strong>&nbsp;{{$ctrl.technology.version}}
+    </div>
+    <div ng-if="$ctrl.technology.license">
+      <strong>License:</strong>&nbsp;{{$ctrl.technology.license}}&nbsp;<a ng-if="$ctrl.technology.licenseUrl" href="{{$ctrl.technology.licenseUrl}}" title="{{$ctrl.technology.license}} License" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+    </div>
+    <div class="lead mt-3">
+      {{$ctrl.technology.description}}
+    </div>
+    <div class="text-right mt-3" ng-if="$ctrl.technology.url">
+      <a href="{{$ctrl.technology.url}}" title="{{$ctrl.technology.name}} website" target="_blank">Go to website&nbsp;<i class="fas fa-external-link-alt"></i></a>
+    </div>
+    <div class="mt-3">
+      <button class="btn btn-outline-danger" ng-click="$ctrl.onClose()">Close</button>
+    </div>
+  </div>
+</div>
