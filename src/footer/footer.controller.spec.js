@@ -1,23 +1,18 @@
 import '../app';
 
-describe('footer', () => {
-
-  // Load the module containing the footer component before each test
+describe('FooterController', () => {
+  // Load the application
   beforeEach(angular.mock.module('myAngularApp'));
 
-  // Test the controller
-  describe('FooterController', () => {
-    let ctrl;
+  let ctrl;
 
-    beforeEach(angular.mock.inject((_$componentController_) => {
-      const $componentController = _$componentController_;
-      ctrl = $componentController('appFooter');
-    }));
+  beforeEach(angular.mock.inject((_$componentController_) => {
+    const $componentController = _$componentController_;
+    ctrl = $componentController('appFooter');
+  }));
 
-    it('should be defined', () => {
-      expect(ctrl).toBeDefined();
-    });
-
+  it('should be defined', () => {
+    expect(ctrl).toBeDefined();
   });
 
 });

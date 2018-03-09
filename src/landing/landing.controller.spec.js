@@ -1,6 +1,6 @@
 import '../app';
 
-describe('HeaderController', () => {
+describe('LandingController', () => {
   // Load the application
   beforeEach(angular.mock.module('myAngularApp'));
 
@@ -8,7 +8,7 @@ describe('HeaderController', () => {
 
   beforeEach(angular.mock.inject((_$componentController_) => {
     const $componentController = _$componentController_;
-    ctrl = $componentController('appHeader');
+    ctrl = $componentController('landing');
   }));
 
   it('should be defined', () => {
