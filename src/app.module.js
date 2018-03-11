@@ -1,15 +1,15 @@
-const angular = require('angular');
-require('angular-route');
-require('angular-animate');
-require('angular-resource');
-require('angular-sanitize');
+import angular from 'angular';
+import 'angular-route';
+import 'angular-animate';
+import 'angular-resource';
+import 'angular-sanitize';
 
-require('./core/core.module');
-require('./footer/footer.module');
-require('./header/header.module');
-require('./landing/landing.module');
-require('./technology/technology.module');
-require('./stack/stack.module');
+import './core/core.module';
+import './footer/footer.module';
+import './header/header.module';
+import './landing/landing.module';
+import './technology/technology.module';
+import './stack/stack.module';
 
 angular.module('myAngularApp', [
   'ngRoute',
