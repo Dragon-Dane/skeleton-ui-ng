@@ -10,6 +10,9 @@ export default class StackListController {
       this.applicationStack = technologies.filter((item) => item.type === 'application');
       this.testStack = technologies.filter((item) => item.type === 'test');
       this.buildStack = technologies.filter((item) => item.type === 'build');
+    }, (resp) => {
+      console.log(`Handle error retrieving technologies.`);
+      console.log(`response: ${JSON.stringify(resp, null, 2)}`);
     });
   }
 
