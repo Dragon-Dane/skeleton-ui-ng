@@ -1,6 +1,6 @@
 {
   "name": "skeleton-ui-ng",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Angular 1.x Starter Project",
   "main": "index.js",
   "repository": "git@github.com:mwarman/skeleton-ui-ng.git",
