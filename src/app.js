@@ -1,13 +1,13 @@
-require('jquery/dist/jquery.js');
-require('popper.js/dist/popper.js');
-require('bootstrap');
-require('@fortawesome/fontawesome');
-require('@fortawesome/fontawesome-free-solid');
-require('@fortawesome/fontawesome-free-regular');
-require('@fortawesome/fontawesome-free-brands');
+import 'jquery/dist/jquery.js';
+import 'popper.js/dist/popper.js';
+import 'bootstrap';
+import '@fortawesome/fontawesome';
+import '@fortawesome/fontawesome-free-solid';
+import '@fortawesome/fontawesome-free-regular';
+import '@fortawesome/fontawesome-free-brands';
 
-require('./app.module');
-require('./app.config');
-require('./app.controller');
+import './app.module';
+import './app.config';
+import './app.controller';
 
-require('./styles/styles.scss');
+import './styles/styles.scss';

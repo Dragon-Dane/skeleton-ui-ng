@@ -1,4 +1,4 @@
-require('./technology/technology.module');
+import './technology/technology.module';
 
 const coreModule = angular.module('myAngularApp.core', ['myAngularApp.core.technology']);
 
