@@ -2,7 +2,7 @@
   "id": 1,
   "name": "AngularJS",
   "type": "application",
-  "version": "1.6.10",
+  "version": "1.7.2",
   "license": "MIT",
   "licenseUrl": "https://spdx.org/licenses/MIT.html",
   "description": "AngularJS is a structural framework for dynamic web apps.",
